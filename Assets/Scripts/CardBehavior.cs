@@ -20,8 +20,8 @@ public class CardBehavior : MonoBehaviour
         if(cardBack != null && cardBack.name != gameObject.GetComponent<SpriteRenderer>().sprite.name && isHidden){
             gameObject.GetComponent<SpriteRenderer>().sprite = cardBack;
         }
-        Debug.Log("Card position in CARD ASSET: " + position);
-        Debug.Log("ACTUAL Card position: " + transform.position);
+        // Debug.Log("Card position in CARD ASSET: " + position);
+        // Debug.Log("ACTUAL Card position: " + transform.position);
     }
     public int GetValue(){
         return value;
@@ -55,7 +55,7 @@ public class CardBehavior : MonoBehaviour
     public void SetPosition(Vector3 newPosition){
          position = newPosition;
          transform.position = position;
-         Debug.Log("Card position after set: " + transform.position);
+         // Debug.Log("Card position after set: " + transform.position);
     }
     // public void MoveCardToPosition(){
     //      gameObject.transform.position = position;

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+// using UnityEngine.XR;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -22,7 +22,6 @@ public class PlayerScript : MonoBehaviour
     public void GetCard(bool isHidden){
         GameObject card = deck.DealCard();
         hand.Add(card);
-        //Is this correct rules?
         //Checking that if the card dealt is an ACE and it is one of the first two cards dealt, then it's value should be 11. If not, the value will remain 1.
         if(card.GetComponent<CardBehavior>().IsAce() && handIndex < 2){
             hand[handIndex].GetComponent<CardBehavior>().SetValue(11);
@@ -64,13 +63,11 @@ public class PlayerScript : MonoBehaviour
         else start = 0;
         if(handIndex < 6){
             for(int i = 0; i < handIndex; ++i){
-                //yield return new WaitForSeconds(1);
                 hand[i].GetComponent<CardBehavior>().SetPosition(cardSlots[start+i*2].position);
                 
             }
         } else {
             for(int i = 0; i < handIndex; ++i){
-                //yield return new WaitForSeconds(1);
                 hand[i].GetComponent<CardBehavior>().SetPosition(cardSlots[start+i*2].position);
             }
         }
