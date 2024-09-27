@@ -6,26 +6,26 @@ The goal of this game is to draw a hand (of cards) that is higher than the deale
 
 ### Game Buttons
 #### MainMenu
-*?* brings up the rules of Blackjack.
+*(?)* brings up the rules of Blackjack.
 
-*Choose Card* allows you to change the color of the card design.
+*(Choose Card)* allows you to change the color of the card design.
 
-*Start Game* starts the actual game of Blackjack. Once you start, there is no going back.
+*(Start Game)* starts the actual game of Blackjack. Once you start, there is no going back.
 
 #### GameBoard
-*Deal* starts the round by shuffling the deck and distributing 2 cards to the player and the dealer. 
+*(Deal)* starts the round by shuffling the deck and distributing 2 cards to the player and the dealer. 
 
-*Hit* allows the player to draw another card.
+*(Hit)* allows the player to draw another card.
 
-*Stand* indicates that the player is done with their turn and the dealer should make their move.
-
-Move your mouse around the screen to *aim* the ship and click the mouse to *shoot*.
+*(Stand)* indicates that the player is done with their turn and the dealer should make their move.
 
 ### Additional Features 
 #### *(included outside of minimum required elements)*
 
-I added functionality that allowed the player to shoot pill bullets at the germs. When a bullet hits a germ the bullet is deleted and the germ spawns two smaller, discolored germs. If these smaller germs are hit they will delete without spawning new germs.
+I added background audio to the game and audio to button clicks.
 
-In addition to the added shooting functionality I drew up custom sprites for the game so as to make it more aesthetically interesting!
+I added dynamic card color changing, which can be seen in the Main Menu. When you click the card design you want, the card design changes on the screen. Also in the Main Menu I dynamically generate card positions for the background cards.
 
-Lastly, I attempted to play with the animation object in unity in hopes of animating my sprites, but I wasn't able to figure out how to implement it successfully.
+Within my card flipping animation, I utilized Animation Events so that the animation would change based on card design.
+
+Lastly, I attempted to add a card dealing animation but the animation was messing up my card positions so I changed it back to normal.
